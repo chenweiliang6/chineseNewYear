@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <audio autoplay id="mAudio">
+    <audio id="mAudio">
         <source src="music/love1.ogg" type="audio/mp3" />
     </audio>
     <div id="main">
@@ -230,7 +230,9 @@
                 audio.play();
             }, false);
         };
-        audioAutoPlay('mAudio');//xxx是你audio标签的id
+        window.onload = function() {
+            audioAutoPlay('mAudio');//xxx是你audio标签的id
+        };
     </script>
 
 </body>
