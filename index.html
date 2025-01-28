@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <audio id="mAudio" autoplay>
+    <audio id="mAudio" >
         <source src="music/love1.ogg" type="audio/mp3" />
     </audio>
     <div id="main">
@@ -49,8 +49,6 @@
                 </div>
             </div>
             <div id="clock-box">
-                <!-- <span class="STYLE1"></span><font color="#33CC00">距离我喜欢你，</font>
-<span class="STYLE1">已经是……</span> -->
                 <span class="STYLE1"></span>
                 <font color="#33CC00"></font>
                 <span class="STYLE1"></span>
@@ -231,7 +229,9 @@
             }, false);
         };
         window.onload = function() {
-            audioAutoPlay('mAudio');//xxx是你audio标签的id
+            setTimeout(()=>{
+                audioAutoPlay('mAudio');//xxx是你audio标签的id
+            },1000)
         };
     </script>
 
